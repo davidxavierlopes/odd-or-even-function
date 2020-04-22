@@ -16,7 +16,7 @@ public class Function {
         String numberQueryValue = request.getQueryParameters().get("number");
         try {
             int number = Integer.parseInt(numberQueryValue);
-            String response = String.format("The number %d is %s. DO JENKINS CRLLLL", number, number % 2 == 0 ? "Even" : "Odd");
+            String response = String.format("The number %d is %s. DO JENKINS CRLLL", number, number % 2 == 0 ? "Even" : "Odd");
 
             return request.createResponseBuilder(HttpStatus.OK).body(response).build();
         } catch (NumberFormatException nfe) {
