@@ -17,6 +17,7 @@ public class Function {
         try {
             int number = Integer.parseInt(numberQueryValue);
             String response = String.format("The number %d is %s.", number, number % 2 == 0 ? "Even" : "Odd");
+            String response = String.format("DO JENKINS CRLLLLLLLLLLLLLLLLLL");
 
             return request.createResponseBuilder(HttpStatus.OK).body(response).build();
         } catch (NumberFormatException nfe) {
